@@ -10,6 +10,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins',sans-serif;
+
 }
 
  :root{
@@ -29,8 +30,10 @@
 }
 
  body {
-    background: var(--bg-color);
+     background: var(--bg-color); 
     color:var(--text-color); 
+    /* background-image: url("https://www.pexels.com/photo/man-in-black-jacket-771742/") */
+  
     
 } 
 
@@ -189,7 +192,7 @@ span{
 .about-img img{
    
     margin-left: 3%;
-    width: 12vw;
+    width: 18vw;
     
     
   
@@ -255,7 +258,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     gap:2rem;
-    padding-bottom: 3%;
+    padding-bottom: 30%;
   }
 
   .service-container .service-box{
@@ -298,6 +301,10 @@ span{
 }
 .portfolio-box img{
     width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box img:hover{
+    transform: scale(1.1);
 }
 .portfolio-container {
     display: grid;
@@ -327,4 +334,74 @@ span{
     flex-direction: column;
     text-align: center;
     padding: 0 4rem ;
+    transform: translateX(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer{
+    transform: translateX(0);
+}
+
+.portfolio-layer h4{
+    font-size: 3rem;
+}
+
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    color: #160e10;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+
+}
+.portfolio-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.contact-section h2{
+    margin-bottom: 3rem;
+}
+.contact-section form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-section form input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-section form .in_data-box input,
+.contact-section form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact-section form .in_data-box input{
+    width: 49%;
+}
+
+.contact-section form textarea{
+    resize: none;
+}
+
+.contact-section form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
 }
