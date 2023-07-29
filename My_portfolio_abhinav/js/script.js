@@ -43,9 +43,15 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content,.heading',{origin:'top'});
-ScrollReveal().reveal('.portfolio-pic,.service-container, .portfolio-box,.contact-section',{origin:'bottom'});
+ScrollReveal().reveal('.portfolio-pic,.service-container, .portfolio-box,',{origin:'bottom'});
 ScrollReveal().reveal('.home-content h1,.about-img',{origin:'left'});
 ScrollReveal().reveal('.home-content p,.about-content',{origin:'right'})
+ScrollReveal().reveal('.portfolio-container',{origin:'right'})
+// ScrollReveal().reveal('.data-form',{origin:'left'});
+ScrollReveal().reveal('.contact-section  input',{origin:"left"});
+ScrollReveal().reveal('.contact-section email',{origin:"right"});
+
+
 
 
 const typed= new Typed('.multext',{
